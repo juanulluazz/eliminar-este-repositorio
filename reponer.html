@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Reposicion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reponer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@600&family=Sarpanch:wght@700&display=swap" rel="stylesheet"> 
+    
+</head>
+<body>
+    <div class="container titulo">
+         <h1>REPONER STOCK</h1>    
+    </div>
+
+    <div id="sub-titulo" class="container ">
+        <h2 id="prueba">PRODUCTOS A REPONER</h2>
+        <a href="./index.html">Volver</a>
+    </div>
+    
+    <div class="lista-productos">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Vol</th>
+                    <th scope="col">Detalle</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+
+                <tbody id="items">
+
+                    <td>
+                        Cromatica
+                    </td>
+                    <td>
+                        4l
+                    </td>
+                    <td>
+                        Rojo
+                    </td>
+                    <td>
+                        Brillante
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <!-- Aca van los elementos que cargue en la lista -->
+                </tbody>
+
+                <tfoot>
+                  <tr id="footer">
+                       
+                </tr>
+            </tfoot>
+        </table>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+     Agregar Producto
+    </button>
+ 
+</div>
+
+<div class="container footer">
+    
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" id="color" class="btn btn-primary">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
